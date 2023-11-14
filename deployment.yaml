@@ -16,6 +16,7 @@ spec:
       containers:
         - name: whoami
           image: ghcr.io/andrew-stclair/whoami:latest
+          imagePullPolicy: Always
           resources:
             limits:
               memory: "512Mi"
