@@ -4,8 +4,7 @@ metadata:
   name: whoami
   namespace: whoami
 spec:
-  type: NodePort
-  externalTrafficPolicy: Local
+  type: ClusterIP
   ports:
     - port: 5678
       targetPort: 80
