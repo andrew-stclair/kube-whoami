@@ -16,6 +16,8 @@ spec:
       containers:
         - name: whoami
           image: ghcr.io/andrew-stclair/whoami:2023-11
+          securityContext:
+            readOnlyRootFilesystem: true
           resources:
             limits:
               memory: "512Mi"
